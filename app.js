@@ -74,7 +74,7 @@ const hold = function () {
     if (playing) {
         score[activePlayer] += currentScore;
         document.querySelector(`.totalScore-${activePlayer}`).textContent = score[activePlayer];
-        if (score[activePlayer] >= 20) {
+        if (score[activePlayer] >= 100) {
             playing = false;
 
             dice.src = './img/dice-0.png';
